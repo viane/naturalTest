@@ -371,3 +371,24 @@ nav a:hover {
         page-break-after: avoid;
     }
 }
+
+
+
+.test-string{
+  border: 1px solid blue ;
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 10px 5px 10px 5px;
+    text-align: center;
+    color: blue;
+}
+
+.text-input{
+  width: 550px;
+  min-height: 50px;
+  resize: vertical;
+}
+
+
+#draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+#droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }

@@ -4,8 +4,14 @@ var express = require('express');
 
 var router = express.Router();
 
+var natural = require('natural');
+
 router.post('/stem', function (req, res) {
-  res.send(200);
+
+  natural.PorterStemmer.attach();
+  res.send({stems: req.body.text.tokenizeAndStem()})
+
+
 })
 
 module.exports = router
